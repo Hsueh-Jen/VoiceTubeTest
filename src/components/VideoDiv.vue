@@ -45,7 +45,6 @@ export default {
 <style scoped>
 
 .img{
-  width:300px;
   height:220px;
   cursor:pointer;
   transition: all .2s ease-in-out;
@@ -53,21 +52,25 @@ export default {
 
 .img:hover,
 .img:focus{
-  -ms-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .video{
-  width:300px;
   float:left;
   margin:3px;
   background: #FFFFFF;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
   border-radius: 4px;
+
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height:330px;
 }
+
 .title{
   font-family: NotoSansCJKtc-Regular;
   color: #212B36;
@@ -80,7 +83,6 @@ export default {
 }
 
 .thumbnail{
-  width:100%;
   position:relative;
   overflow:hidden;
 }

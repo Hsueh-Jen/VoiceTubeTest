@@ -30,8 +30,8 @@
 </ul>
 <hr>
 
-    <div v-for="(video) in videos">
-      <video-div
+  <div class="videos">
+      <video-div  v-for="(video) in videos"
         :imgSrc="video.thumbnail"
         :title="video.title"
         :views="video.views"
@@ -152,20 +152,9 @@ li {
 .body{
  max-width:1366px;
 }
-/*
-.list-enter-active,
-.list-leave-active {
-  transition: all 1s;
-}
 
-.list-enter,
-.list-leave-to {
-  opacity: 0;
-  transform: translateY(30px);
+.videos{
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.list-move {
-  transition: transform 1s;
-}
-*/
 </style>
